@@ -121,3 +121,11 @@ button[type="submit"]:hover {
   padding: 20px 10px;
   opacity: 0.85;
 }
+
+body {
+  /* 기존에 있다면 아래 내용이 포함되어 있는지 확인 */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
