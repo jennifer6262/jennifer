@@ -1,0 +1,113 @@
+/* 기본 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Noto Sans KR', sans-serif;
+  background: linear-gradient(to bottom right, #ffe6f0, #fff5fa);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* 컨테이너 */
+.container {
+  background-color: #ffffffcc;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(255, 192, 203, 0.3);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+/* 제목 */
+.container h1 {
+  font-size: 28px;
+  color: #d63384;
+  margin-bottom: 30px;
+}
+
+/* 폼 스타일 */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #b03060;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #f8c1d1;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fff0f5;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff80aa;
+  outline: none;
+  background-color: #fff8fa;
+}
+
+/* 버튼 스타일 */
+button[type="submit"] {
+  background-color: #ffb6c1;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff89a3;
+}
+
+/* 결과 영역 */
+#result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff6f9;
+  border: 1px solid #ffccda;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.2);
+  text-align: left;
+}
+
+/* 결과 텍스트 강조 */
+#result h2 {
+  color: #c2185b;
+  margin-bottom: 15px;
+}
+
+#result p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#result strong {
+  color: #c94f7c;
+}
+
+/* 숨김 클래스 */
+.hidden {
+  display: none;
+}
