@@ -12,13 +12,16 @@
     <form id="searchForm">
       <div class="form-group">
         <label for="studentId">학번</label>
-        <input type="text" id="studentId" name="studentId" placeholder="예: 1915" required>
+        <input type="text" id="studentId" name="studentId" placeholder="예:(입학년도학년반번호) 20251915" required>
       </div>
       <div class="form-group">
         <label for="studentName">이름</label>
         <input type="text" id="studentName" name="studentName" placeholder="예: 홍길동" required>
       </div>
       <button type="submit">조회하기</button>
+
+      <!-- 👇 개발자 명 표시 -->
+      <p class="developer">개발자: 대전이문고등학교 AI교육정보부 황유리</p>
     </form>
 
     <div id="result" class="hidden">
@@ -26,12 +29,6 @@
       <p><strong>ID:</strong> <span id="accountId"></span></p>
       <p><strong>PW:</strong> <span id="accountPw"></span></p>
     </div>
-  </div>
-
-  <!-- 👇 여기 추가됨 -->
-  <footer class="footer">
-      <p>개발자: 대전이문고등학교 AI교육정보부 황유리</p>
-    </footer>
   </div>
 
   <script src="/static/script.js"></script>

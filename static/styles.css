@@ -112,10 +112,10 @@ button[type="submit"]:hover {
   display: none;
 }
 
-.footer {
-  margin-top: 40px;
+.developer {
+  margin-top: 16px;
   text-align: center;
-  font-size: 14px;
+  font-weight: bold;
   color: #a15c85;
-  opacity: 0.8;
+  font-size: 14px;
 }
