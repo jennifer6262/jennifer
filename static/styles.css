@@ -11,8 +11,8 @@ body {
   color: #333;
   min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 40px 20px;
 }
 
@@ -26,6 +26,7 @@ body {
   max-width: 480px;
   text-align: center;
   backdrop-filter: blur(8px);
+  margin: 0 auto;
 }
 
 /* 제목 */
@@ -92,7 +93,6 @@ button[type="submit"]:hover {
   text-align: left;
 }
 
-/* 결과 텍스트 강조 */
 #result h2 {
   color: #c2185b;
   margin-bottom: 15px;
@@ -107,11 +107,12 @@ button[type="submit"]:hover {
   color: #c94f7c;
 }
 
-/* 숨김 클래스 */
+/* 숨김 처리 */
 .hidden {
   display: none;
 }
 
+/* 하단 개발자 정보 */
 .footer {
   text-align: center;
   font-weight: bold;
@@ -120,12 +121,4 @@ button[type="submit"]:hover {
   margin-top: 60px;
   padding: 20px 10px;
   opacity: 0.85;
-}
-
-body {
-  /* 기존에 있다면 아래 내용이 포함되어 있는지 확인 */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
