@@ -1,8 +1,8 @@
 // 예시용 임시 데이터 (학번-이름 → ID, PW 매핑)
 const accountData = [
-  { studentId: '20230123', studentName: '홍길동', id: 'honggildong@edupass.kr', pw: 'pass1234' },
-  { studentId: '20230124', studentName: '김민지', id: 'kimminji@edupass.kr', pw: 'pw5678' },
-  { studentId: '20230125', studentName: '이수민', id: 'leesumin@edupass.kr', pw: 'sm2023pw' },
+  { studentId: '20251101', studentName: '홍길동', id: 'honggildong@edupass.kr', pw: 'pass1234' },
+  { studentId: '20251102', studentName: '김민지', id: 'kimminji@edupass.kr', pw: 'pw5678' },
+  { studentId: '20251103', studentName: '이수민', id: 'leesumin@edupass.kr', pw: 'sm2023pw' },
   // 필요시 더 추가 가능
 ];
 
