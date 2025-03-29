@@ -1,9 +1,8 @@
-// 예시용 임시 데이터 (학번-이름 → ID, PW 매핑)
+// 예시용 임시 데이터 (학번-이름 → ID, 이메일 매핑)
 const accountData = [
-  { studentId: '1101', studentName: '홍길동', id: 'honggildong@edupass.kr', pw: 'pass1234' },
-  { studentId: '1102', studentName: '김민지', id: 'kimminji@edupass.kr', pw: 'pw5678' },
-  { studentId: '1103', studentName: '이수민', id: 'leesumin@edupass.kr', pw: 'sm2023pw' },
-  // 필요시 더 추가 가능
+  { studentId: '1101', studentName: '홍길동', id: 'honggildong', email: 'honggildong@school.kr' },
+  { studentId: '1916', studentName: '김민지', id: 'kimminji', email: 'kimminji@school.kr' },
+  { studentId: '1917', studentName: '이수민', id: 'leesumin', email: 'leesumin@school.kr' }
 ];
 
 document.getElementById('searchForm').addEventListener('submit', function (event) {
@@ -12,24 +11,22 @@ document.getElementById('searchForm').addEventListener('submit', function (event
   const studentId = document.getElementById('studentId').value.trim();
   const studentName = document.getElementById('studentName').value.trim();
 
-  // 입력값이 있는지 확인
   if (!studentId || !studentName) {
     alert('학번과 이름을 모두 입력해주세요.');
     return;
   }
 
-  // 데이터에서 해당 학생 찾기
   const account = accountData.find(
     entry => entry.studentId === studentId && entry.studentName === studentName
   );
 
   const resultBox = document.getElementById('result');
   const idSpan = document.getElementById('accountId');
-  const pwSpan = document.getElementById('accountPw');
+  const emailSpan = document.getElementById('accountEmail');
 
   if (account) {
     idSpan.textContent = account.id;
-    pwSpan.textContent = account.pw;
+    emailSpan.textContent = account.email;
     resultBox.classList.remove('hidden');
   } else {
     resultBox.classList.add('hidden');
